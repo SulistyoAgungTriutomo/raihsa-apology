@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Sofia+Sans:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --sans: 'Sofia Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+}
+.font-serif-soft{ font-family: var(--serif); }
+.font-sans-soft{ font-family: var(--sans); }
+
+@keyframes heartPulse { 0%,100%{ transform: scale(1); opacity:.55 } 50%{ transform: scale(1.08); opacity:.9 } }
+.heart-pulse{ animation: heartPulse 2.6s ease-in-out infinite; filter: drop-shadow(0 2px 4px rgba(0,0,0,.08)); }
